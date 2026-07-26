@@ -1,5 +1,9 @@
+import { Footer } from "@/components/layout/footer";
+import { AiAgents } from "@/features/landing/components/ai-agents";
 import { Feature } from "@/features/landing/components/feature";
 import { Hero } from "@/features/landing/components/hero";
+import { ProfessionalTemplates } from "@/features/landing/components/professional-templates";
+import { Testimonials } from "@/features/landing/components/testimonials";
 import { WorkingProcess } from "@/features/landing/components/WorkingProcess";
 
 /**
@@ -12,6 +16,10 @@ function LandingPage() {
       <Hero />
       <Feature />
       <WorkingProcess />
+      <AiAgents />
+      <ProfessionalTemplates />
+      <Testimonials />
+      <Footer />
     </div>
   );
 }

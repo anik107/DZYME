@@ -157,6 +157,25 @@
   --font-display: var(--font-raleway);
 }
 
+@theme {
+  /**
+   * Anticlockwise counterpart to `animate-spin`. Declared as its own token
+   * rather than `animate-spin [animation-direction:reverse]` because
+   * `animate-spin` emits the `animation` shorthand, which resets any
+   * direction/duration set alongside it.
+   */
+  --animate-spin-reverse: spin-reverse 7s linear infinite;
+
+  @keyframes spin-reverse {
+    from {
+      transform: rotate(360deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;

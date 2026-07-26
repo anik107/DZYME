@@ -42,7 +42,7 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${darkerGrotesque.variable} ${abhayaLibre.variable} ${raleway.variable} h-full antialiased`}
     >
-      <body className="flex min-h-full flex-col">
+      <body className="flex min-h-full flex-col" suppressHydrationWarning>
         <TooltipProvider>{children}</TooltipProvider>
         <Toaster />
       </body>
